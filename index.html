@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thunar Boutique is a premium online boutique for elegant sarees, women's fashion, kids wear, and curated style essentials." />
+  <meta name="keywords" content="Thunar Boutique, silk sarees, cotton sarees, fancy sarees, women's tops, chudidar sets, kids wear, boutique" />
+  <meta name="author" content="Thunar Boutique" />
+  <meta property="og:title" content="Thunar Boutique | Style that speaks elegance" />
+  <meta property="og:description" content="Discover elegant sarees, new arrivals, best sellers, and boutique fashion at Thunar Boutique." />
+  <meta property="og:type" content="website" />
+  <title>Thunar Boutique | Style that speaks elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader"><div class="ribbon"></div><p>Preparing elegance...</p></div>
+  <header class="site-header" id="home">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Thunar Boutique home"><span>TB</span>Thunar Boutique</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li><li><a href="#collections">Collections</a></li><li><a href="#new-arrivals">New Arrivals</a></li><li><a href="#best-sellers">Best Sellers</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><li><button class="link-button" id="loginNav">Login</button></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+        <button class="icon-button cart-button" id="cartButton" aria-label="Open cart">🛍️<span id="cartCount">0</span></button>
+        <div class="profile" id="profileMenu"><button class="profile-button" id="profileButton">Guest</button><div class="profile-dropdown"><button id="logoutButton">Logout</button></div></div>
+      </div>
+    </nav>
+    <section class="hero section-fade">
+      <div class="hero-copy"><p class="eyebrow">Premium ethnic & everyday fashion</p><h1>Thunar Boutique</h1><p class="tagline">Style that speaks elegance.</p><a class="primary-button" href="#collections">Shop Now</a></div>
+      <div class="hero-card" aria-label="Boutique fashion banner"><img src="assets/images/hero-boutique.svg" alt="Elegant boutique banner with saree and fashion accessories"><div class="floating-badge">New Festive Edit</div></div>
+    </section>
+  </header>
+  <main>
+    <section class="toolbar section-fade" aria-label="Product tools"><div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search silk sarees, tops, kids wear..." /></div><select id="categoryFilter"><option value="all">All Categories</option></select><select id="sortSelect"><option value="featured">Sort: Featured</option><option value="low-high">Price: Low to High</option><option value="high-low">Price: High to Low</option></select></section>
+    <section class="section collections section-fade" id="collections"><div class="section-heading"><p class="eyebrow">Curated Collections</p><h2>Every piece, thoughtfully chosen</h2><p>Explore timeless sarees, graceful sets, playful kids wear, and daily essentials with a premium boutique finish.</p></div><div class="product-grid" id="productGrid"></div></section>
+    <section class="section slider-section section-fade" id="new-arrivals"><div class="section-heading"><p class="eyebrow">New Arrivals</p><h2>Fresh styles for the season</h2></div><div class="slider"><button class="slide-btn" id="prevSlide">‹</button><div class="slide-track" id="slideTrack"></div><button class="slide-btn" id="nextSlide">›</button></div></section>
+    <section class="section best-sellers section-fade" id="best-sellers"><div class="section-heading"><p class="eyebrow">Best Sellers</p><h2>Customer-loved favorites</h2></div><div class="best-grid" id="bestGrid"></div></section>
+    <section class="section about section-fade" id="about"><div><p class="eyebrow">About Us</p><h2>Elegance made personal</h2><p>Thunar Boutique blends heritage-inspired silhouettes with modern comfort. Our collections celebrate soft textures, refined details, inclusive styling, and warm service for every generation.</p></div><div class="about-cards"><article><span>✦</span><h3>Handpicked Quality</h3><p>Fabric-first selections with flattering cuts and boutique finishing.</p></article><article><span>♡</span><h3>Personal Styling</h3><p>Gentle guidance for occasions, colors, and complete looks.</p></article><article><span>♻</span><h3>Thoughtful Fashion</h3><p>Small curated drops that favor lasting style over fast trends.</p></article></div></section>
+    <section class="section testimonials section-fade"><div class="section-heading"><p class="eyebrow">Testimonials</p><h2>Stories from our customers</h2></div><div class="review-grid"><article><img src="assets/images/profile-1.svg" alt="Customer Asha"><h3>Asha R.</h3><p>★★★★★</p><blockquote>Beautiful saree quality and a truly premium shopping feel.</blockquote></article><article><img src="assets/images/profile-2.svg" alt="Customer Meera"><h3>Meera K.</h3><p>★★★★★</p><blockquote>The chudidar set fit perfectly and arrived just as pictured.</blockquote></article><article><img src="assets/images/profile-3.svg" alt="Customer Nila"><h3>Nila S.</h3><p>★★★★☆</p><blockquote>Elegant designs, soft colors, and lovely support for styling.</blockquote></article></div></section>
+    <section class="section instagram section-fade"><div class="section-heading"><p class="eyebrow">Instagram Gallery</p><h2>@thunarboutique moments</h2></div><div class="insta-grid"><img src="assets/images/gallery-1.svg" alt="Boutique flat lay"><img src="assets/images/gallery-2.svg" alt="Saree detail"><img src="assets/images/gallery-3.svg" alt="Fashion accessories"><img src="assets/images/gallery-4.svg" alt="Festive outfit"></div></section>
+    <section class="section contact section-fade" id="contact"><div class="contact-info"><p class="eyebrow">Contact</p><h2>Visit or message us</h2><p>📞 +91 98765 43210</p><p>✉️ hello@thunarboutique.com</p><p>📍 24 Lotus Street, Chennai, Tamil Nadu</p><div class="socials"><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="WhatsApp">☏</a></div><div class="map-placeholder">Google Maps Placeholder</div></div><form class="contact-form" id="contactForm"><input required placeholder="Your name"><input type="email" required placeholder="Email address"><textarea required placeholder="How can we help?"></textarea><button class="primary-button" type="submit">Send Message</button></form></section>
+  </main>
+  <footer><div><h3>Thunar Boutique</h3><p>Style that speaks elegance.</p></div><div><h4>Quick Links</h4><a href="#collections">Collections</a><a href="#about">About</a><a href="#contact">Contact</a></div><div><h4>Categories</h4><a href="#collections">Sarees</a><a href="#collections">Tops</a><a href="#collections">Kids Wear</a></div><div><h4>Contact</h4><p>hello@thunarboutique.com</p><p>+91 98765 43210</p></div><p class="copyright">© 2026 Thunar Boutique. All rights reserved.</p></footer>
+  <aside class="cart-panel" id="cartPanel"><button id="closeCart" class="close">×</button><h2>Your Cart</h2><div id="cartItems"></div><strong id="cartTotal">Total: ₹0</strong></aside>
+  <div class="modal" id="authModal" role="dialog" aria-modal="true" aria-hidden="true"><form class="auth-card" id="authForm"><button type="button" class="close" id="closeAuth">×</button><h2 id="authTitle">Login</h2><input id="nameField" placeholder="Full name"><input id="emailField" type="email" placeholder="Email" required><input id="passwordField" type="password" placeholder="Password (min 6 characters)" required><label><input id="rememberField" type="checkbox"> Remember me</label><button class="primary-button" type="submit">Continue</button><button type="button" class="link-button" id="switchAuth">Need an account? Sign up</button></form></div>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button><div class="toast" id="toast"></div><script src="script.js"></script>
+</body>
+</html>
